@@ -1,10 +1,10 @@
-@mixin flex-center($justify, $align){
+@mixin flex-center($justify, $align) {
     display: flex;
     justify-content: $justify;
     align-items: $align;
 }
 
-@mixin font($size, $weight){
+@mixin font($size, $weight) {
     font-size: $size;
     font-weight: $weight;
 }
