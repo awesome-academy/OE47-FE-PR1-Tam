@@ -1,0 +1,12 @@
+include ./product.pug
+
+mixin optionPage
+    ul.home-filter__page-option
+        each item in listOption
+            li.home-filter__page-option-item
+                a(href="#")= item
+
+mixin product
+    each item in listNewProduct
+        - const {img, title, price, rate, feedback} = item
+            +productItem(img, title, price, rate, feedback)

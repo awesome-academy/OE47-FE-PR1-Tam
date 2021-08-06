@@ -1,0 +1,22 @@
+include ./data/product
+include ./data/option
+include ./mixin/mixin
+
+section.section-new__product
+    .container
+        .row
+            .col-lg-12.home-page-product__heading  
+                .category__heading
+                    img(src="./assets/images/icon.png" alt="icon") 
+                    h3 Sản phẩm mới
+                .home-filter__page
+                    +optionPage
+                    .home-filter__page-button
+                        a.home-filter__page-btn(href='#')
+                            i.home-filter__page-icon.fas.fa-caret-left
+                        a.home-filter__page-btn(href='#')
+                            i.home-filter__page-icon.fas.fa-caret-right
+            .col-lg-12
+                .home-product
+                    .row
+                        +product

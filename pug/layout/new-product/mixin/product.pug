@@ -1,0 +1,14 @@
+mixin productItem(img, title, price, rate, feedback)
+    .col-lg-4.col-md-6.home-product-mobile
+        .home-product-item
+            img.img-fluid(src=img)
+            span.home-product-item__price=price
+            h4.home-product-item__name=title
+            .home-product-item__rating
+                .home-product-item__star
+                    each item in rate
+                        i(class=item)
+                span.home-product-item__feedback= feedback
+            .home-product-item__button
+                a.home-product-item__buy(href="#") Mua ngay 
+                a.home-product-item__detail(href="#") Xem chi tiết

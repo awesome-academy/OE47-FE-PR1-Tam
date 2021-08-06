@@ -14,7 +14,7 @@ header
                 a.header__sign-in Đăng nhập
     .header__top__logo.container
         .header__logo
-            img(src="../src/assets/images/logo.png", alt="logo")
+            img(src="./assets/images/logo.png", alt="logo")
         .header__hotline 
             h4 hotline :
             span (04) 9500 9650 - (04) 9500 8850
@@ -39,13 +39,13 @@ header
                                     .row
                                         +megaMenu()
                                 .col-lg-4.mt-5
-                                    img.navbar__image(src="../src/assets/images/image-nav.png" alt="images-nav")
+                                    img.navbar__image(src="./assets/images/image-nav.png" alt="images-nav")
                         if(item == "giới thiệu")
                             .navbar__menu
                                 +menu()           
             a.header__menu__cart(href="#")
                 label.navbar-cart(for='cart-toggle')
-                    img(src="../src/assets/images/cart.png" alt="cart")
+                    img(src="./assets/images/cart.png" alt="cart")
                 input#cart-toggle(type='checkbox')
                 .menu__cart
                     +cart()
