@@ -1,0 +1,109 @@
+.section-slide {
+    margin: 40px 0;
+
+    .slide__image {
+        @include respond(tablet) {
+            padding: 15px;
+        }
+        position: relative;
+        padding-right: 0;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        .pagination__slide {
+            .pagination__item {
+                @include respond(mobile) {
+                    left: 46%;
+                }
+                position: absolute;
+                bottom: 15px;
+                left: 47%;
+                width: 10px;
+                height: 10px;
+                background-color: $text-gray;
+                cursor: pointer;
+                &:nth-child(2) {
+                    left: 49%;
+                    background-color: $bg-menu;
+                    
+                }
+
+                &:nth-child(3) {
+                    left: 51%;
+                    @include respond(mobile) {
+                        left: 52%;
+                    }
+                }
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+
+    .container__slide {
+        .slide__item {
+            @include respond(mobile) {
+                margin-left: 0;
+            }
+            @include respond(tablet) {
+               padding: 15px;
+            }
+            padding-left: 0;
+            .slide__wrap {
+                @include flex-center(center, center);
+                @include respond(mobile) {
+                    border: 1px solid $text-gray;
+                }
+                @include respond(tablet) {
+                    border: 1px solid $text-gray;
+                }
+                @include respond(desktop) {
+                    padding: 6px;
+                }
+                padding: 19px;
+                border: 1px solid $text-gray;
+                border-left: none;
+                cursor: pointer;
+
+                .slide__icon {
+                    margin-bottom: 20px;
+                    color: $bg-primary;
+                    font-size: 14px;
+                }
+
+                .slide__content {
+                    margin-left: 16px;
+
+                    h4 {
+                        @include font(14px, bold);
+                        text-transform: uppercase;
+                    }
+
+                    p {
+                        @include font(14px, 300);
+                        @include respond(tablet) {
+                            min-width: 550px;
+                        }
+                        @include respond(mobile) {
+                            min-width: 200px;
+                        }
+                        color: $text-gray;
+                        padding-top: 10px;
+                    }
+                }
+
+                &:hover,
+                &:hover .slide__icon,
+                &:hover .slide__content p {
+                    background-color: $bg-primary;
+                    color: $text-white;
+                }
+            }
+        }
+    }
+}

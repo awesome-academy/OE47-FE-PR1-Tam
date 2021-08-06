@@ -1,0 +1,11 @@
+include ./mixin/mixin.pug
+
+section.section-slide  
+    .container.container__slide
+        .row 
+            .col-lg-8.slide__image
+                img.img-fluid(src="../src/assets/images/banner-bg.png", alt="banner-bg")
+                .pagination__slide
+                    +pagination
+            .col-lg-4.slide__item
+                +listIcon
