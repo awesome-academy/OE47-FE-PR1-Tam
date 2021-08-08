@@ -1,0 +1,19 @@
+include ./mixin/mixin
+include ./data/product.pug
+
+section.section-new__product-2
+    .container
+        .row
+            .col-lg-12.home-page-product__heading  
+                .category__heading
+                    img(src="./assets/images/icon.png" alt="icon") 
+                    h3 Hàng mới về
+                .home-filter__page
+                    a.home-filter__page-btn(href='#')
+                        i.home-filter__page-icon.fas.fa-caret-left
+                    a.home-filter__page-btn(href='#')
+                        i.home-filter__page-icon.fas.fa-caret-right
+            .col-lg-12
+                .home-product
+                    .row
+                        +product

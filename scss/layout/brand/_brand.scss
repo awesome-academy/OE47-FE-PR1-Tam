@@ -1,0 +1,32 @@
+.section-brand {
+    position: relative;
+    background-color: $bg-top;
+    margin-top: 5rem;
+    
+    .home-page-brand {
+        @include flex-center(space-between, center);
+
+        .home-page-brand__item {
+            padding: 20px 0;
+        }
+    }
+
+    .home-page-brand__button {
+        position: absolute;
+        cursor: pointer;
+        
+        i {
+            color: $text-gray;
+        }
+    }
+
+    .button-left {
+        top: 45%;
+        left: -30px;
+    }
+
+    .button-right {
+        top: 45%;
+        right: -30px;
+    }
+}

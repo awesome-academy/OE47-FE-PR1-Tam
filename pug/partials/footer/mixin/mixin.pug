@@ -1,0 +1,16 @@
+include item.pug
+
+mixin footer
+    each listMenuFooter in listMenuFooters
+        - const{title, listMenus} = listMenuFooter
+            .col-lg-2
+                .footer-menu-title
+                    img(src="../../../assets/images/icon.png")
+                    h4= title
+                if(h4 == "về chúng tôi")
+                    +itemIcon(listMenus)
+                else if(h4 == "kết nối")
+                    +itemIcon(listMenus)
+                else
+                    +item(listMenus)
+                    

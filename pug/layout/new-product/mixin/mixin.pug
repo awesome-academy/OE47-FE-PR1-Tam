@@ -8,5 +8,5 @@ mixin optionPage
 
 mixin product
     each item in listNewProduct
-        - const {img, title, price, rate, feedback} = item
-            +productItem(img, title, price, rate, feedback)
+        - const {img, title, price, rates, feedback} = item
+            +productItem(img, title, price, rates, feedback)
