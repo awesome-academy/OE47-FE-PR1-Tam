@@ -1,0 +1,46 @@
+.section-news-letter {
+    text-align: center;
+    background-color: $bg-menu;
+    background-image: url("../../../assets/images/newsletter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .home-page-news-letter__content {
+        padding: 20px 0;
+        
+        h3 {
+            @include font(20px, 400);
+            color: $text-white;
+            padding: 10px 0;
+        }
+    
+        form {
+            @include flex-center(center, center);
+            padding: 20px 0;
+
+            input {
+                background-color: $bg-white;
+                padding: 12px 14px;
+                border-radius: 30px;
+                width: 50%;
+                outline: none;
+                margin-right: 8px;
+            }
+
+            button {
+                font-weight: bold;
+                background-color: $bg-primary;
+                color: $text-white;
+                padding: 12px 24px;
+                border-radius: 30px;
+                min-width: 150px;
+                outline: none;
+                cursor: pointer;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}

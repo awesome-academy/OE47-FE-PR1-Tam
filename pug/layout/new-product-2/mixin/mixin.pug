@@ -1,0 +1,12 @@
+include product.pug
+
+mixin listCategory
+    each item in listCategory
+        li.caterogy-item
+            img(src="./assets/images/icon.png" alt="icon")
+            a.caterogy-item__link(href='#')= item
+
+mixin product
+    each listNewItem in listNewItems
+        - const {img, title, rates,feedback,decription, price} = listNewItem
+            +productItem(img, title, rates,feedback,decription, price)
