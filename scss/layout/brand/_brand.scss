@@ -7,6 +7,17 @@
         @include flex-center(space-between, center);
 
         .home-page-brand__item {
+            @include respond(mobile) {
+                &:nth-child(n+2) {
+                    display: none;
+                }
+
+                &:nth-child(1) {
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+            
             padding: 20px 0;
         }
     }
@@ -21,11 +32,25 @@
     }
 
     .button-left {
+        @include respond(tablet) {
+            left: -10px;
+        }
+        @include respond(mobile) {
+            left: 30px;
+        }
+
         top: 45%;
         left: -30px;
     }
 
     .button-right {
+        @include respond(tablet) {
+            right: -10px;
+        }
+        @include respond(mobile) {
+            right: 30px;
+        }
+
         top: 45%;
         right: -30px;
     }

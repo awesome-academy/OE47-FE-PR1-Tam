@@ -15,10 +15,21 @@
         }
     
         form {
+            @include respond(mobile) {
+                flex-direction: column;
+            }
             @include flex-center(center, center);
             padding: 20px 0;
 
             input {
+                @include respond(mobile) {
+                    width: 90%;
+                    margin-right: 0;
+                    
+                    &::placeholder {
+                        text-align: center;
+                    }
+                }
                 background-color: $bg-white;
                 padding: 12px 14px;
                 border-radius: 30px;
@@ -28,6 +39,11 @@
             }
 
             button {
+                @include respond(mobile) {
+                    width: 90%;
+                    margin-top: 8px;
+                }
+                
                 font-weight: bold;
                 background-color: $bg-primary;
                 color: $text-white;
