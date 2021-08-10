@@ -1,0 +1,13 @@
+mixin item(listMenus)
+    ul.footer-menu__list
+        each listMenu in listMenus
+            li.footer-menu__item
+                a(href="#")= listMenu
+
+mixin itemIcon(listMenus)
+    ul.footer-menu__list
+        each listMenu in listMenus
+            - const {icon, name} = listMenu
+                li.footer-menu__item
+                    i(class=icon)
+                    a(href="#")= name

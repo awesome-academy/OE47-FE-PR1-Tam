@@ -108,6 +108,3 @@ scss/*.css.map
 
 *.json
 
-pug/partials/footer/
-
-scss/partials/_footer.scss
