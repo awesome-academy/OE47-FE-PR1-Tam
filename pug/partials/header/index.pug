@@ -31,18 +31,24 @@ header
             input#menu-toggle(type='checkbox')
             ul.navbar__list 
                 each item in listNav
-                    li.navbar__item
-                        a(href="#")=item
-                        if(item == "trang chủ")
-                            .navbar__mega-menu.row
-                                .col-lg-8 
-                                    .row
-                                        +megaMenu()
-                                .col-lg-4.mt-5
-                                    img.navbar__image(src="./assets/images/image-nav.png" alt="images-nav")
-                        if(item == "giới thiệu")
-                            .navbar__menu
-                                +menu()           
+                    - const {name, url} = item
+                        li.navbar__item
+                            if(url == "./product.html")
+                                a(href="./product.html")=name
+                            else if(url == "./index.html")
+                                a(href="./index.html")=name
+                            else
+                                a(href="#")=name
+                            if(name == "trang chủ")
+                                .navbar__mega-menu.row
+                                    .col-lg-8 
+                                        .row
+                                            +megaMenu()
+                                    .col-lg-4.mt-5
+                                        img.navbar__image(src="./assets/images/image-nav.png" alt="images-nav")
+                            if(name == "giới thiệu")
+                                .navbar__menu
+                                    +menu()
             a.header__menu__cart(href="#")
                 label.navbar-cart(for='cart-toggle')
                     img(src="./assets/images/cart.png" alt="cart")

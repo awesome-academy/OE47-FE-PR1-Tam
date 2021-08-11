@@ -1,0 +1,14 @@
+mixin listCategoryPromotion
+    ul.category__list
+        each listCategoryPromotion in listCategoryPromotions
+            - const {title, listItem} = listCategoryPromotion
+                li.category-item__heading
+                    img(src="./assets/images/icon-list-promotion.png" alt="icon")
+                    span= title
+                each item in listItem
+                    - const {img, title, price} = item
+                        a.home-product-item(href="#")
+                            img.img-fluid(src=img)
+                            .home-product-item__content
+                                h4.home-product-item__name= title
+                                span.home-product-item__price= price

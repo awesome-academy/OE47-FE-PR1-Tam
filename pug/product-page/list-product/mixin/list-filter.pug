@@ -1,0 +1,19 @@
+mixin filter
+    .home-filter
+        .home-filter__sort
+            span.home-filter__label Sắp xếp theo:
+            .select-input
+                .select-input__list
+                    select
+                        option(value='name') Tên sản phẩm
+                .select-input__list
+                    label(for='show') Show:
+                    select#show
+                        option(value='9') 9
+        .home-filter__page
+            a.home-filter__page-btn(href='./product.html')
+                .home-filter__page-icon
+                    img(src="./assets/images/icon-list-product.png")
+            a.home-filter__page-btn(href='./grid-product.html')
+                .home-filter__page-icon
+                    img(src="./assets/images/icon-list-filter.png")

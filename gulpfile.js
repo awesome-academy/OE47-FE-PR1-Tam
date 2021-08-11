@@ -6,7 +6,7 @@ const { src, dest, parallel, watch, series } = require('gulp'),
 
 const FilesPath = {
     scssFiles: 'scss/*.scss',
-    htmlFiles: 'pug/*.pug'
+    htmlFiles: 'pug/pages/*.pug'
 }
 
 const { scssFiles, htmlFiles } = FilesPath;

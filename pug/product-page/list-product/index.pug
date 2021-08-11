@@ -1,0 +1,36 @@
+include ./mixin/mixin
+include ./mixin/list-filter
+include ./mixin/mixin-list-promotion
+include ./mixin/pagination
+include ./data/product
+include ./data/category-product
+include ./data/category-color
+include ./data/category-price
+include ./data/category-promotion
+include ./data/pagination
+include ../../components/productItem
+
+section.section-list-product
+    .container
+        .row
+            .col-lg-12.product-page__heading
+                .category__heading
+                    h3 Trang chủ
+                    i.product-filter__page-icon.fas.fa-caret-right
+                    h3.product-filter__page-heading Danh mục sản phẩm
+            .col-lg-3.product-page__list
+                nav.category
+                    .category-list
+                        +listCategoryProduct
+                        +listCategoryPrice
+                        +listCategoryColor
+                        +listCategoryPromotion
+            .col-lg-9
+                block productDetail
+                    +filter
+                    .home-product
+                        .row
+                            block product
+                                +product
+                    .home-product__pagination
+                        +pagination
