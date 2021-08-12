@@ -108,3 +108,10 @@ scss/*.css.map
 
 *.json
 
+scss/product-page/detail-product
+pug/pages/detail-product.pug
+pug/product-page/detail-product
+
+scss/product-page/grid-product
+pug/pages/grid-product.pug
+pug/product-page/grid-product

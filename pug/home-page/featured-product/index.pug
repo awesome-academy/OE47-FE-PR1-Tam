@@ -1,0 +1,25 @@
+include ./mixin/mixin
+include ./data/category
+include ./data/product
+include ../../components/product
+
+section.section-featured__product
+    .container
+        .row
+            .col-lg-12.home-page-product__heading  
+                .category__heading
+                    img(src="./assets/images/icon.png" alt="icon") 
+                    h3 Sản phẩm nổi bật
+                .home-filter__page
+                    a.home-filter__page-btn(href='#')
+                        i.home-filter__page-icon.fas.fa-caret-left
+                    a.home-filter__page-btn(href='#')
+                        i.home-filter__page-icon.fas.fa-caret-right
+            .col-lg-3
+                nav.category
+                    ul.category-list
+                        +listCategory
+            .col-lg-9
+                .home-product
+                    .row
+                        +product

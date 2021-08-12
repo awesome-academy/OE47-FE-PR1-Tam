@@ -1,0 +1,19 @@
+mixin rating(rates)
+    - for (let i = 1; i <= 5; i++)
+        if i > rates
+           i.far.fa-star
+        else
+           i.fas.fa-star
+
+mixin productItem(img, title, price, rates, feedback)
+    .home-product-item
+        img.img-fluid(src=img)
+        span.home-product-item__price= price
+        h4.home-product-item__name= title
+        .home-product-item__rating
+            .home-product-item__star
+                +rating(rates)
+            span.home-product-item__feedback= `(${feedback} đánh giá)`
+        .home-product-item__button
+            a.home-product-item__buy(href="#") Mua ngay 
+            a.home-product-item__detail(href="./detail-product.html") Xem chi tiết
