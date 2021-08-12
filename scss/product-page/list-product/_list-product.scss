@@ -76,7 +76,7 @@
                         }
                         @include respond(tablet) {
                             img {
-                                width: 20%;
+                                width: 30%;
                             }
 
                             &:nth-child(2n+1) {
