@@ -5,9 +5,9 @@ mixin rating(rates)
         else
            i.fas.fa-star
 
-mixin productItem(img, title, price, rates, feedback)
-    .home-product-item
-        img.img-fluid(src=img)
+mixin productItem(img, title, price, rates, feedback, gridProduct, gridImg)
+    .home-product-item(class=gridProduct)
+        img.img-fluid(class=gridImg src=img)
         span.home-product-item__price= price
         h4.home-product-item__name= title
         .home-product-item__rating
