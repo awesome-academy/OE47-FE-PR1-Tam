@@ -1,37 +1,37 @@
 include ../../components/input-group
 
-section.section-sign-up
+section.section-sign
     .container
         .row
-            .col-lg-12.sign-up-page__heading
+            .col-lg-12.sign-page__heading
                 .category__heading
                     h3 Trang chủ
-                    i.sign-up-filter__page-icon.fas.fa-caret-right
-                    h3.sign-up-filter__page-heading Đăng kí
+                    i.sign-filter__page-icon.fas.fa-caret-right
+                    h3.sign-filter__page-heading Đăng kí
             .col-lg-12
-                .sign-up__container
-                    form.sign-up__form
-                        h1.sign-up__form-title Thông tin cá nhân:
+                .sign__container
+                    form.sign__form
+                        h1.sign__form-title Thông tin cá nhân:
                         .row
                             .col-lg-6
-                                +inputForm("sign-up__form-label", "name", "Họ và tên :", "text")
+                                +inputForm("sign__form-label", "name", "Họ và tên :", "text")
                             .col-lg-6
-                                +inputForm("sign-up__form-label", "email", "Email :", "text")
+                                +inputForm("sign__form-label", "email", "Email :", "text")
                             .col-lg-6
-                                +inputForm("sign-up__form-label", "phone", "Số điện thoại :", "text")
+                                +inputForm("sign__form-label", "phone", "Số điện thoại :", "text")
                             .col-lg-6
-                                +inputForm("sign-up__form-label", "address", "Địa chỉ :", "text")
+                                +inputForm("sign__form-label", "address", "Địa chỉ :", "text")
                             .col-lg-12
-                                .sign-up__form-checkbox
+                                .sign__form-checkbox
                                     input(type="checkbox")
                                     span Đăng kí nhận tin tức qua email
-                        h3.sign-up__form-title Thông tin đăng nhập:
+                        h3.sign__form-title Thông tin đăng nhập:
                         .row
                             .col-lg-6
-                                +inputForm("sign-up__form-label", "name-sign-in", "Họ và tên :", "text")
+                                +inputForm("sign__form-label", "name-sign-in", "Họ và tên :", "text")
                             .col-lg-6
-                                +inputForm("sign-up__form-label", "email-sign-in", "Email :", "text")
+                                +inputForm("sign__form-label", "email-sign-in", "Email :", "text")
                             .col-lg-6
-                                .sign-up__form-button
-                                    a.sign-up__form-btn.btn-back(href="#") Quay lại
-                                    a.sign-up__form-btn.btn-agree(href="#") Đăng kí
+                                .sign__form-button
+                                    a.sign__form-btn.btn-back(href="#") Quay lại
+                                    a.sign__form-btn.btn-agree(href="#") Đăng kí
