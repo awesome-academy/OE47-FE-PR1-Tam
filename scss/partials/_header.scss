@@ -41,12 +41,15 @@
                     padding-left: 40px;
                 }
                 border-right: 1px solid $text-gray;
-               padding: 17px;
-               text-transform: uppercase;
-               &:hover {
+                padding: 17px;
+                text-transform: uppercase;
+                color: $text-black;
+
+                &:hover {
                     color: $text-white;
                     background-color: $bg-primary;
                     cursor: pointer;
+                    text-decoration: none;
                 }
             }
 
