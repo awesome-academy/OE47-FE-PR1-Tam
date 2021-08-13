@@ -1,0 +1,12 @@
+extends product.pug
+
+block blogTitle
+    .col-lg-12.product-page__heading.blog-page__heading
+        .category__heading.category__blog
+            h3 Trang chủ
+            i.product-filter__page-icon.fas.fa-caret-right
+            h3.product-filter__page-heading Tin tức
+block blogCategory
+    include ../product-page/blog-page/category
+block blog
+    include ../product-page/blog-page/index
