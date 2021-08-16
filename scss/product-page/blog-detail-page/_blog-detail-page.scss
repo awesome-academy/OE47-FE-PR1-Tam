@@ -127,6 +127,7 @@
                     text-transform: none;
                     font-style: italic;
                     color: $border;
+                    cursor: pointer;
 
                     &:last-child {
                         color: $bg-primary;
