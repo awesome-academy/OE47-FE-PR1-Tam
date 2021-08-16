@@ -23,7 +23,7 @@
     }
 }
 
-@-moz-keyframes coccoc-alo-circle-anim {
+@-moz-keyframes popup {
 	0% {
 		transform: rotate(0) scale(.5) skew(1deg);
 		opacity: .1;
@@ -38,7 +38,7 @@
 	}
 }
 
-@-webkit-keyframes coccoc-alo-circle-anim {
+@-webkit-keyframes popup {
 	0% {
 		transform: rotate(0) scale(.5) skew(1deg);
 		opacity: .1;
@@ -53,7 +53,7 @@
 	}
 }
 
-@-o-keyframes coccoc-alo-circle-anim {
+@-o-keyframes popup {
 	0% {
 		transform: rotate(0) scale(.5) skew(1deg);
 		opacity: .1;
@@ -68,7 +68,7 @@
 	}
 }
 
-@keyframes coccoc-alo-circle-anim {
+@keyframes popup {
 	0% {
 		transform: rotate(0) scale(.5) skew(1deg);
 		opacity: .1;
@@ -83,7 +83,7 @@
 	}
 }
 
-.coccoc-alo-ph-circle {
+.popup {
     width: 120px;
     height: 120px;
     top: -28px;
@@ -95,11 +95,11 @@
 	border-radius: 100%;
 	border: 2px solid rgba(30, 30, 30, 0.4);
 	opacity: .1;
-	-webkit-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
-	-moz-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
-	-ms-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
-	-o-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
-	animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+	-webkit-animation: popup 1.2s infinite ease-in-out;
+	-moz-animation: popup 1.2s infinite ease-in-out;
+	-ms-animation: popup 1.2s infinite ease-in-out;
+	-o-animation: popup 1.2s infinite ease-in-out;
+	animation: popup 1.2s infinite ease-in-out;
 	-webkit-transition: all .5s;
 	-moz-transition: all .5s;
 	-o-transition: all .5s;
