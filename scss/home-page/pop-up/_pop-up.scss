@@ -1,0 +1,197 @@
+.btn-news {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    background-color: $bg-primary;
+    border: 1px solid $border;
+    padding: 20px;
+    border-radius: 50%;
+    
+    button {
+        background-color: transparent;
+        cursor: pointer;
+        outline: none;
+        color: $text-white;
+    }
+
+    i {
+        font-size: 18px;
+    }
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+@-moz-keyframes coccoc-alo-circle-anim {
+	0% {
+		transform: rotate(0) scale(.5) skew(1deg);
+		opacity: .1;
+	}
+	30% {
+		transform: rotate(0) scale(.7) skew(1deg);
+		opacity: .5;
+	}
+	100% {
+		transform: rotate(0) scale(1) skew(1deg);
+		opacity: .1;
+	}
+}
+
+@-webkit-keyframes coccoc-alo-circle-anim {
+	0% {
+		transform: rotate(0) scale(.5) skew(1deg);
+		opacity: .1;
+	}
+	30% {
+		transform: rotate(0) scale(.7) skew(1deg);
+		opacity: .5;
+	}
+	100% {
+		transform: rotate(0) scale(1) skew(1deg);
+		opacity: .1;
+	}
+}
+
+@-o-keyframes coccoc-alo-circle-anim {
+	0% {
+		transform: rotate(0) scale(.5) skew(1deg);
+		opacity: .1;
+	}
+	30% {
+		transform: rotate(0) scale(.7) skew(1deg);
+		opacity: .5;
+	}
+	100% {
+		transform: rotate(0) scale(1) skew(1deg);
+		opacity: .1;
+	}
+}
+
+@keyframes coccoc-alo-circle-anim {
+	0% {
+		transform: rotate(0) scale(.5) skew(1deg);
+		opacity: .1;
+	}
+	30% {
+		transform: rotate(0) scale(.7) skew(1deg);
+		opacity: .5;
+	}
+	100% {
+		transform: rotate(0) scale(1) skew(1deg);
+		opacity: .1;
+	}
+}
+
+.coccoc-alo-ph-circle {
+    width: 120px;
+    height: 120px;
+    top: -28px;
+    right: -30px;
+	position: absolute;
+	background-color: transparent;
+	-webkit-border-radius: 100%;
+	-moz-border-radius: 100%;
+	border-radius: 100%;
+	border: 2px solid rgba(30, 30, 30, 0.4);
+	opacity: .1;
+	-webkit-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+	-moz-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+	-ms-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+	-o-animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+	animation: coccoc-alo-circle-anim 1.2s infinite ease-in-out;
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	-o-transition: all .5s;
+	transition: all .5s;
+}
+
+.modal  {
+    padding-right: 0 !important;
+
+    .modal-dialog {
+        margin: 4rem auto;
+        max-width: 800px;
+    
+        .modal-content {
+            background-image: url("../assets/images/popup.png");
+            background-color: $bg-top;
+            padding: 30px;
+    
+            .modal-header {
+                @include flex-center(center, center);
+                flex-direction: column;
+                position: relative;
+                border: none;
+                text-align: center;
+    
+                .btn-close {
+                    position: absolute;
+                    top: -30px;
+                    right: -30px;
+    
+                    button {
+                        outline: none;
+    
+                        span {
+                            @include font(30px, bold);
+                            color: $bg-primary;
+                            background-color: $bg-menu;
+                            width: 40px;
+                            height: 40px;
+                            display: block;
+                        }
+    
+                        &:hover {
+                            opacity: 0.8;
+                        }
+                    }
+                }
+    
+                .modal-title {
+                    @include font(30px, bold);
+                    text-transform: uppercase;
+                }
+        
+                span {
+                    @include font(16px, 400);
+                }
+            }
+            
+            .modal-body {
+                @include flex-center(center, center);
+                flex-direction: column;
+    
+                input {
+                    width: 100%;
+                    padding: 14px 20px;
+                }
+    
+                .btn-register {
+                    padding: 16px 0;
+                    font-weight: bold;
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    color: $text-white;
+                    width: 100%;
+                    background-color: $bg-primary;
+                }
+    
+                .modal-checkbox {
+                    @include flex-center(flex-start, center);
+                    width: 100%;
+                    margin-top: 14px;
+    
+                    input {
+                        width: 20px;
+                        height: 20px;
+                    }
+    
+                    span {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
+    }    
+}
