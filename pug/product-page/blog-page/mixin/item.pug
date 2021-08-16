@@ -1,0 +1,17 @@
+mixin blog
+    each blogItem in blogItems
+        - const {img, title, date, author, comment, content} = blogItem
+            .blog-page__item
+                img.img-fluid(src=img)
+                h3.blog-item__title= title
+                .blog-item__DAM
+                    span.blog-item__date= date
+                    .blog-item__author
+                        i.fas.fa-user
+                        span Đăng bởi
+                        span= author
+                    .blog-item__comment
+                        i.fas.fa-comments
+                        span= `${comment} Bình luận`
+                p.blog-item__content= `${content}`
+                    span [Đọc tiếp...]

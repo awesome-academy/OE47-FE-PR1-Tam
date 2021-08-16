@@ -1,0 +1,34 @@
+mixin listTag
+    ul.category__list
+        each tag in tags
+            - const {title, items} = tag
+                li.category-item-news__heading
+                    img(src="./assets/images/icon.png" alt="icon")
+                    span= title
+                .category-tag-list
+                    each item in items 
+                        li.category-item-tags
+                            a.category-item__link(href='#')= item
+
+mixin listNews
+    ul.category__list
+        each listCategoryNew in listCategoryNews
+            if(listCategoryNew == "Danh mục tin tức")
+                li.category-item-news__heading.category-news
+                    img(src="./assets/images/icon.png" alt="icon")
+                    span= listCategoryNew
+            else
+                li.category-item-news
+                    a.category-item__link(href='#')= listCategoryNew
+
+mixin listImages
+    ul.category__list
+        each listCategoryImage in listCategoryImages
+            - const {title, imgs} = listCategoryImage
+                li.category-item-news__heading
+                    img(src="./assets/images/icon.png" alt="icon")
+                    span= title
+                .category-image-list
+                    each img in imgs
+                        li.category-image-news
+                            img(src=img)
